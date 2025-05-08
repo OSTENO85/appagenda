@@ -1,0 +1,83 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.contenedor-principal {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  padding: 0 2rem;
+  text-align: center;
+  justify-content: center;
+
+  @include m.tablet {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // ¡aquí la magia!
+    gap: 2rem;
+    padding: 0 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.cajas {
+display: flex;
+align-items: center;
+    justify-content: center;
+  background-color: v.$azul;
+  color: v.$azulOscuro;
+  border-radius: 1rem;
+  padding: 6rem 1rem;
+  font-size: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  word-wrap: break-word;  /* Permite que el texto largo se divida */
+  white-space: normal;    /* Asegura que el texto se ajuste a varias líneas */
+text-transform: uppercase;
+font-weight: bold;
+margin-bottom: 1rem;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: v.$blanco;
+    border: 5px solid v.$blanco;
+    .cajas-pequeñas{
+        width: 50%;
+    }
+  }
+
+  i{
+    font-size: 6rem;
+  }
+}
+
+.cajas-c{
+  width: auto;
+  background-color: v.$rojoTipoFondo;
+  color: v.$rojoTipoLetra;
+  display: flex;
+
+}
+
+.cajas-l{
+  width: auto;
+  background-color: v.$verdeTipoFondo;
+  color: v.$verdeTipoLetra;
+  display: flex;
+
+}
+
+.barra{
+  
+  @include m.tablet{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .boton{
+    width: auto;
+    text-align: right;
+    text-align: center;
+  }
+}

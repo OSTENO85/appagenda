@@ -1,0 +1,26 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+
+.boton{
+    @include m.boton(v.$verde, v.$verdeOscuro);
+    &:hover{
+        color: v.$blanco;
+    }
+}
+
+.botonlogin{
+    width: 100%;
+}
+
+
+.boton-modificar{
+   
+    @include m.boton(v.$negro, v.$blanco);
+   
+    &:hover{
+        color: v.$blanco;
+    }
+
+ 
+}

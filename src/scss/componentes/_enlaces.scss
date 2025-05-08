@@ -1,0 +1,42 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+@use "sass:color";
+
+.enlaces{
+ 
+    display: block;
+
+    @include m.tablet{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    }
+
+}
+
+.enlace{
+    color: v.$blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: v.$negro;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid v.$blanco;
+    width: auto;
+    font-weight: bold;
+
+    &:hover{
+        background-color: v.$blanco;
+        color: v.$negro;
+        
+    }
+
+    i{
+        font-size: 3rem;
+        margin-right: 4px;
+}
+}
