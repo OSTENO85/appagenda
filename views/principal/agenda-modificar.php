@@ -32,7 +32,7 @@
 
 <div class="campo">
     <label for="fecha">Fecha</label>
-    <input id="fecha" name="fecha" type="date" min="<?php echo date('Y-m-d'); ?>" value="<?php echo $reserva->fecha; ?>"/>
+    <input id="fecha" name="fecha" type="date" value="<?php echo $reserva->fecha; ?>"/>
 </div>
 
 <div class="campo">
