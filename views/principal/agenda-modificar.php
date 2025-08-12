@@ -32,11 +32,11 @@
 
 <div class="campo">
     <label for="fecha">Fecha</label>
-<<<<<<< HEAD
+
     <input id="fecha" name="fecha" type="date" value="<?php echo $reserva->fecha; ?>"/>
-=======
+
     <input id="fecha" name="fecha" type="date"  value="<?php echo $reserva->fecha; ?>"/>
->>>>>>> 25ce17e (nuevos cambios)
+
 </div>
 
 <div class="campo">
