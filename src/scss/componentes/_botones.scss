@@ -24,3 +24,19 @@
 
  
 }
+<<<<<<< HEAD
+=======
+
+
+.botondesglose{
+    @include m.boton(v.$azul, v.$blanco);
+    & {
+        font-size:3.6rem;
+    }
+    &:hover{
+        color: v.$blanco;
+    }
+
+ 
+}
+>>>>>>> 25ce17e (nuevos cambios)

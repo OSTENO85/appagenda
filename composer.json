@@ -14,6 +14,10 @@
         }
     ],
     "require": {
+<<<<<<< HEAD
         "vlucas/phpdotenv": "5.4"
+=======
+        "vlucas/phpdotenv": "*"
+>>>>>>> 25ce17e (nuevos cambios)
     }
 }

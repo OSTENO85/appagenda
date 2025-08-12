@@ -1,0 +1,93 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.nombreFactura{
+    text-transform: uppercase;
+}
+
+.listado-facturas{
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    @include m.grid(1, 2rem);
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 20rem;
+        width: 100%;
+        padding: 1rem;   
+    }
+
+    .factura {
+        font-size: 4.5rem;
+        background-color: v.$blanco;
+        color: v.$azul;
+        border-radius: 20px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;    
+        &:hover {
+            background-color: v.$azul;
+            transform: scale(1.02);
+            color: v.$blanco;
+            a{
+                color: v.$blanco;
+            }
+          
+        }
+    
+        a {
+            color: v.$azul;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+    
+        .monto-factura {
+            display: flex;
+         justify-content: space-between;
+            color: v.$verdeOscuro;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.totales{
+    color:#5ffb22;
+  
+}
+
+.cancelado{
+    font-size: 5rem;
+    color: v.$rojo;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #eee;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.contenedor-desglose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-totales{
+display: flex;
+justify-content: center;
+gap: 2rem;
+}

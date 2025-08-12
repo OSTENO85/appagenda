@@ -140,6 +140,17 @@ class ActiveRecord {
             return array_shift( $resultado ) ;
         }
 
+<<<<<<< HEAD
+=======
+
+        // Busca todas las facturas pendientes
+        public static function belongsTo($columna, $valor) {
+            $query = "SELECT * FROM " . static::$tabla  ." WHERE {$columna} = '{$valor}'";
+            $resultado = self::consultarSQL($query);
+            return $resultado;
+        }
+
+>>>>>>> 25ce17e (nuevos cambios)
     //consulta plana de SQL(utilizar cuando los modelos no son suficientes)
     public static function SQL($query) {
         $resultado = self::consultarSQL($query);

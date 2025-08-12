@@ -4,9 +4,17 @@ require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Router;
 use Controllers\APIController;
+<<<<<<< HEAD
 use Controllers\LoginController;
 use Controllers\AgendaController;
 use Controllers\ComidasController;
+=======
+use Controllers\ItemController;
+use Controllers\LoginController;
+use Controllers\AgendaController;
+use Controllers\ComidasController;
+use Controllers\FacturaController;
+>>>>>>> 25ce17e (nuevos cambios)
 use Controllers\LugaresController;
 
 $router = new Router();
@@ -91,5 +99,46 @@ $router->get('/comidas-ver', [ComidasController::class, 'ver']);
 $router->post('/comidas-ver', [ComidasController::class, 'ver']);
 
 
+<<<<<<< HEAD
+=======
+//FACTURAS///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Dashboard//
+$router->get('/factura-dashboard', [FacturaController::class, 'FacturaDashboard']);
+
+//crear factura//
+$router->get('/factura-crear', [FacturaController::class, 'crear']);
+$router->post('/factura-crear', [FacturaController::class, 'crear']);
+
+//ver factura//
+$router->get('/factura-ver', [FacturaController::class, 'ver']);
+$router->post('/factura-ver', [FacturaController::class, 'ver']);
+
+$router->get('/factura', [FacturaController::class, 'factura']);
+$router->post('/factura', [FacturaController::class, 'factura']);
+
+//ver factura Completas//
+$router->get('/factura-verCompletos', [FacturaController::class, 'verCompletos']);
+$router->post('/factura-verCompletos', [FacturaController::class, 'verCompletos']);
+
+//items facturas
+$router->get('/factura-items', [FacturaController::class, 'items']);
+$router->post('/factura-items', [FacturaController::class, 'items']);
+
+//API PARA LOS ITEMS//////////////////////////////////////////////////////////////////////////
+$router->get('/api/items', [ItemController::class, 'index']);
+$router->post('/api/items', [ItemController::class, 'crear']);
+$router->post('/api/items/actualizar', [ItemController::class, 'actualizar']);
+$router->post('/api/items/eliminar', [ItemController::class, 'eliminar']);
+
+// API para las facturas
+$router->post('/api/facturas/actualizar-total', [FacturaController::class, 'actualizarTotal']);
+
+
+
+
+
+
+>>>>>>> 25ce17e (nuevos cambios)
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();

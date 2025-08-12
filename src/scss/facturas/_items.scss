@@ -1,0 +1,54 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.contenedor-nuevo-item{
+    display: flex;
+    justify-content: center;
+  
+    .agregar-item{
+      
+        @include m.boton(v.$azul, v.$blanco);
+
+    }  
+
+    
+}
+
+
+.listado-items{
+
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+    .no-items{
+        text-align: center;
+       
+    }
+
+}
+
+.item {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; // Nombre a la izquierda, monto a la derecha
+    align-items: center;             // Centrado vertical
+    width: 100%;                      // Ocupa todo el ancho disponible
+    max-width: 400px;                 // Opcional, para que no se vea muy separado en pantallas grandes
+    margin: 0 auto;                   // Centra el bloque horizontalmente
+    margin-bottom: 1rem;
+
+    p {
+        margin: 0;             // Quita márgenes por defecto
+    }
+
+    p:last-child {
+        font-weight: bold;     // Resalta el monto
+        color: #0a7c2f;        // Verde para diferenciar
+    }
+}
+
+.total-items{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
