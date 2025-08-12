@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
+
     "content-hash": "dd5fa94ce0368d5d64927b1edff99744",
-=======
+
     "content-hash": "fa2a7e5ac2e6b2038a87fde998ce9de5",
->>>>>>> 25ce17e (nuevos cambios)
+
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -389,7 +389,7 @@
         },
         {
             "name": "vlucas/phpdotenv",
-<<<<<<< HEAD
+
             "version": "v5.4.0",
             "source": {
                 "type": "git",
@@ -400,7 +400,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/d4394d044ed69a8f244f3445bcedf8a0d7fe2403",
                 "reference": "d4394d044ed69a8f244f3445bcedf8a0d7fe2403",
-=======
+
             "version": "v5.6.2",
             "source": {
                 "type": "git",
@@ -411,12 +411,12 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/24ac4c74f91ee2c193fa1aaa5c249cb0822809af",
                 "reference": "24ac4c74f91ee2c193fa1aaa5c249cb0822809af",
->>>>>>> 25ce17e (nuevos cambios)
+
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
-<<<<<<< HEAD
+
                 "graham-campbell/result-type": "^1.0.2",
                 "php": "^7.1.3 || ^8.0",
                 "phpoption/phpoption": "^1.8",
@@ -428,7 +428,7 @@
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
                 "phpunit/phpunit": "^7.5.20 || ^8.5.21 || ^9.5.10"
-=======
+
                 "graham-campbell/result-type": "^1.1.3",
                 "php": "^7.2.5 || ^8.0",
                 "phpoption/phpoption": "^1.9.3",
@@ -440,24 +440,24 @@
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "ext-filter": "*",
                 "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
->>>>>>> 25ce17e (nuevos cambios)
+
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
-<<<<<<< HEAD
+
                 "branch-alias": {
                     "dev-master": "5.4-dev"
-=======
+
                 "bamarni-bin": {
                     "bin-links": true,
                     "forward-command": false
                 },
                 "branch-alias": {
                     "dev-master": "5.6-dev"
->>>>>>> 25ce17e (nuevos cambios)
+
                 }
             },
             "autoload": {
@@ -472,13 +472,13 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-<<<<<<< HEAD
+
                     "email": "hello@gjcampbell.co.uk"
                 },
                 {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com"
-=======
+
                     "email": "hello@gjcampbell.co.uk",
                     "homepage": "https://github.com/GrahamCampbell"
                 },
@@ -486,7 +486,7 @@
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
                     "homepage": "https://github.com/vlucas"
->>>>>>> 25ce17e (nuevos cambios)
+
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -497,11 +497,11 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-<<<<<<< HEAD
+
                 "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.0"
-=======
+
                 "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.2"
->>>>>>> 25ce17e (nuevos cambios)
+
             },
             "funding": [
                 {
@@ -513,11 +513,11 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
+
             "time": "2021-11-10T01:08:39+00:00"
-=======
+
             "time": "2025-04-30T23:37:27+00:00"
->>>>>>> 25ce17e (nuevos cambios)
+
         }
     ],
     "packages-dev": [],
