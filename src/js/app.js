@@ -20,11 +20,7 @@ function iniciaApp(){
 }
 
 async function consultarAPI(){
-
     const url = '/api/tipos';
-
-    const url = 'http://localhost:3000/api/tipos';
-
     const resultado = await fetch(url);
     const tipos = await resultado.json();
     mostrarTipos(tipos);
@@ -140,11 +136,7 @@ async function reservarFecha(event){
     datos.append('usuarioId', usuario);
     datos.append('estado', estado);
 
-
     const url = '/api/reservas';
-
-    const url = 'http://localhost:3000/api/reservas';
-
     const respuesta = await fetch(url, {
         method: 'POST',
         body: datos
