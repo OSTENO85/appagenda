@@ -23,11 +23,11 @@
 
         <div class="campo">
             <label for="fecha">Fecha</label>
-<<<<<<< HEAD
+
             <input id="fecha" type="date">
-=======
+
             <input id="fecha" type="date" min="<?php echo date('Y-m-d'); ?>">
->>>>>>> 25ce17e (nuevos cambios)
+
         </div>
 
         <div class="campo">
@@ -56,8 +56,8 @@ $script = "
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
     <script src='build/js/app.js'></script>
 ";
-<<<<<<< HEAD
+
 ?>
-=======
-?>
->>>>>>> 25ce17e (nuevos cambios)
+
+
+
