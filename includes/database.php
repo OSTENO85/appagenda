@@ -7,10 +7,6 @@ $db = mysqli_connect(
     $_ENV['DB_NAME'],
 );
 
-$db = mysqli_connect('localhost', 'root', 'root', 'appagenda');
-
-
-
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL.";
     echo "errno de depuración: " . mysqli_connect_errno();
