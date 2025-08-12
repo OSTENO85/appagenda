@@ -4,17 +4,11 @@ require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Router;
 use Controllers\APIController;
-<<<<<<< HEAD
 use Controllers\LoginController;
 use Controllers\AgendaController;
 use Controllers\ComidasController;
-=======
 use Controllers\ItemController;
-use Controllers\LoginController;
-use Controllers\AgendaController;
-use Controllers\ComidasController;
 use Controllers\FacturaController;
->>>>>>> 25ce17e (nuevos cambios)
 use Controllers\LugaresController;
 
 $router = new Router();
@@ -99,8 +93,8 @@ $router->get('/comidas-ver', [ComidasController::class, 'ver']);
 $router->post('/comidas-ver', [ComidasController::class, 'ver']);
 
 
-<<<<<<< HEAD
-=======
+
+
 //FACTURAS///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Dashboard//
@@ -134,11 +128,5 @@ $router->post('/api/items/eliminar', [ItemController::class, 'eliminar']);
 // API para las facturas
 $router->post('/api/facturas/actualizar-total', [FacturaController::class, 'actualizarTotal']);
 
-
-
-
-
-
->>>>>>> 25ce17e (nuevos cambios)
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();
